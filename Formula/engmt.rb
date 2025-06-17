@@ -5,21 +5,21 @@
 class Engmt < Formula
   desc "Engineering Management Platform - Single binary with embedded frontend and database"
   homepage "https://github.com/hweeks/engmt"
-  version "0.1.0"
+  version "0.2.0"
   license "MIT"
   depends_on :macos
 
   if Hardware::CPU.intel?
-    url "https://github.com/hweeks/engmt/releases/download/v0.1.0/engmt_Darwin_x86_64.tar.gz"
-    sha256 "578d22bd5e48e6825f87d6930feca3b36b4294990014089d651c83ab203347af"
+    url "https://github.com/hweeks/engmt/releases/download/v0.2.0/engmt_Darwin_x86_64.tar.gz"
+    sha256 "cb9f5e983f88dd41a01972c976d429f7ea0839a8181cfea7fa618568119f4d99"
 
     def install
       bin.install "engmt"
     end
   end
   if Hardware::CPU.arm?
-    url "https://github.com/hweeks/engmt/releases/download/v0.1.0/engmt_Darwin_arm64.tar.gz"
-    sha256 "0e866c75e4b64ae54fd1820af4ae7a9186760d01c985fac57024ce4524743ff0"
+    url "https://github.com/hweeks/engmt/releases/download/v0.2.0/engmt_Darwin_arm64.tar.gz"
+    sha256 "fa7f9fe3a44deb5e6291a86d26aa4a0ecd56515d5512c08ff9ac43f5d9e1c303"
 
     def install
       bin.install "engmt"
